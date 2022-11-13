@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streetwear</title>
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/product.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="scrollTop" onclick="scrolltoTop()"></div>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-logo"> <svg
+          viewBox="0 0 201 40"
+          focusable="false"
+          class="chakra-icon css-a7oa7r"
+        >
+          <title>StockX Logo</title>
+          <g>
+            <path
+              d="M186.401 27.5001L201.001 40V30L189.328 20.0056L201.001 10V0L180.601 17.4859V12.4999L166.001 0V10L177.674 19.9944L166.001 30V40L186.401 22.5144V27.5001Z"
+            ></path>
+            <path
+              d="M20.3007 16.8L13.7506 15.55C10.1005 14.85 8.50062 14 8.50062 12C8.50062 9.19995 11.6506 7.74994 15.6006 7.74994C19.7506 7.74994 23.4506 9.34994 24.2506 12.75H31.2508C30.4508 6.25002 24.6007 2 15.6006 2C7.30062 2 0.750616 5.65011 0.750616 12.2501C0.750616 18.0001 5.65063 20.9001 12.2006 22.1501L18.7506 23.4001C22.4007 24.1001 24.2506 25.2501 24.2506 27.5001C24.2506 30.55 20.8506 32.2501 16.6506 32.2501C11.5006 32.2501 8.05063 29.7501 7.25063 26.0001H0.000610352C1.0506 33.5001 6.95062 38.0001 16.6506 38.0001C25.3006 38.0001 32.0006 34.5001 32.0006 27.25C32.0007 20.85 26.8506 18.05 20.3007 16.8Z"
+            ></path>
+            <path
+              d="M48.6507 6.25001V2.5H41.4007V5.25001C41.4007 8.49998 39.9007 10 36.6507 10H34.6007V15.5H40.3507V29.0001C40.3507 35.0001 43.3007 37.5001 50.3007 37.5001H56.2507V32H50.9507C48.4507 32 47.6007 31.25 47.6007 29V15.5H56.2507V10H45.5007L48.6507 6.25001Z"
+            ></path>
+            <path
+              d="M111.351 32.5C106.101 32.5 102.751 28.8 102.751 23.8C102.751 18.8 106.101 15.1 111.351 15.1C115.401 15.1 118.301 17.35 119.051 20.1H126.201C124.901 13.6 119.251 9.59998 111.351 9.59998C101.901 9.59998 95.3508 15.3 95.3508 23.8C95.3508 32.3 101.901 38 111.351 38C119.251 38 125.451 34 126.451 27.25H119.301C118.551 29.75 115.851 32.5 111.351 32.5Z"
+            ></path>
+            <path
+              d="M75.3507 9.59998C65.6008 9.59998 59.3507 15.3 59.3507 23.8C59.3507 32.3 65.6007 38 75.3507 38C85.1007 38 91.3508 32.3 91.3508 23.8C91.3508 15.3 85.1008 9.59998 75.3507 9.59998ZM75.3507 32.5C70.1007 32.5 66.7507 28.8 66.7507 23.8C66.7507 18.8 70.1007 15.1 75.3507 15.1C80.6007 15.1 83.9508 18.8 83.9508 23.8C83.9508 28.8 80.6008 32.5 75.3507 32.5Z"
+            ></path>
+            <path
+              d="M145.151 22.9001L160.201 10.0001H150.451L138.151 20.8001V2.5H130.901V37.5001H138.151V28.9001L142.498 25.1742L153.051 37.5001H162.251L149.751 22.9001H145.151Z"
+            ></path>
+          </g>
+        </svg></div>
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            class="header-search-input"
+            placeholder="Search for brands, color, etc"
+          />
+        </div>
+      </div>
+      <div class="header-right">
+        <i class="fas fa-bars header-right-icon"></i>
+        <ul class="header-right-menu">
+          <li><a href="">Browse</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="">Sign Up</a></li>
+        </ul>
+        <div class="header-sell-btn">Sell</div>
+      </div>
+    </header>
+    <section>
+      <div
+        class="product-image-wrap"
+        style="
+          background-image: url(https://stockx-assets.imgix.net/Core/browse-header-streetwear.jpg?auto=compress,format);
+        "
+      >
+        <div class="product-content">
+          <h1>Streetwear</h1>
+          <p>
+            Streetwear style is generally accepted to have been born out of the
+            New York City hip hop culture of the late 1970s and early 1980s.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-left-top">
+          <a class="content-left-tittle" href="">Streetwear</a>
+          <ul class="main-menu">
+            <li><a href="">ASSC</a></li>
+            <li><a href="">BAPE</a></li>
+            <li><a href="">NIKE</a></li>
+            <li><a href="">CHROME HEARTS</a></li>
+            <li><a href="">DREW HOUSE</a></li>
+            <li><a href="">ESSENTIALS</a></li>
+            <li><a href="">OFF-WHITE</a></li>
+            <li><a href="">FEAR OF GOD</a></li>
+            <li><a href="">KAWS</a></li>
+            <li><a href="">NEW ERA</a></li>
+            <li><a href="">PALM ANGELS</a></li>
+            <li><a href="">ERIC EMANUEL</a></li>
+            <li><a href="">NIKE APPAREL</a></li>
+            <li><a href="">OTHER BRANDS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-right">
+        <a
+          href="http://127.0.0.1:5500/project/index.html"
+          class="content-right-backhome"
+          >Home</a
+        >
+        <span>/</span>
+        <a href="" class="content-right-tittle">Streetwear</a>
+        <div class="product-list">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Juice-Wrld-x-Vlone-Butterfly-T-Shirt-White.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1608068137&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Juice Wrld x Vlone Butterfly T-Shirt White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$57</div>
+                <div class="product-item-totalsell"># Of Sales 437</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Juice-Wrld-x-Vlone-999-T-Shirt-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1608068134&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Juice Wrld x Vlone 999 T-Shirt Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$59</div>
+                <div class="product-item-totalsell"># Of Sales 361</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Off-White-x-Jordan-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636622356&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Off-White x Jordan T-shirt Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$122</div>
+                <div class="product-item-totalsell"># Of Sales 291</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Off-White-x-Jordan-T-shirt-Sail.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636622355&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Off-White x Jordan T-shirt White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$112</div>
+                <div class="product-item-totalsell"># Of Sales 287</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1632921114&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">Yeezy x Gap Hoodie Black</div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$100</div>
+                <div class="product-item-totalsell"># Of Sales 251</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/FEAR-OF-GOD-ESSENTIALS-3D-Silicon-Applique-Pullover-Hoodie-Dark-Slate.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1625866190&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                FEAR OF GOD ESSENTIALS 3D Silicon Applique Pullover Hoodie
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$209</div>
+                <div class="product-item-totalsell"># Of Sales 234</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/FEAR-OF-GOD-ESSENTIALS-Pull-Over-Hoodie-SS21-Cream-Buttercream.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1620853884&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Pull-Over Hoodie (SS21) Cream/Buttercream
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$178</div>
+                <div class="product-item-totalsell"># Of Sales 197</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Blue.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1632921115&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">Yeezy x Gap Hoodie Blue</div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$105</div>
+                <div class="product-item-totalsell"># Of Sales 195</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Supreme-Tiffany-Co-Box-Logo-Tee-White.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636647311&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Supreme Tiffany & Co. Box Logo Tee White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$284</div>
+                <div class="product-item-totalsell"># Of Sales 175</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/OFF-WHITE-Industrial-Belt-Yellow-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611790885&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                OFF-WHITE Industrial Belt Yellow/Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$139</div>
+                <div class="product-item-totalsell"># Of Sales 167</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Pop-Smoke-x-Vlone-The-Woo-T-Shirt-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1606318864&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Pop Smoke x Vlone The Woo T-Shirt Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$59</div>
+                <div class="product-item-totalsell"># Of Sales 161</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/FEAR-OF-GOD-ESSENTIALS-3D-Silicon-Applique-Pullover-Hoodie-Buttercream.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1606315843&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Pullover Hoodie Applique Logo Buttercream
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$229</div>
+                <div class="product-item-totalsell"># Of Sales 156</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Fear-of-God-Essentials-Pullover-Hoodie-Harvest.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1630518774&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Pullover Hoodie Harvest
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$146</div>
+                <div class="product-item-totalsell"># Of Sales 137</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Brown.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1632921115&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">Yeezy x Gap Hoodie Brown</div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$108</div>
+                <div class="product-item-totalsell"># Of Sales 136</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Travis-Scott-Cactus-Jack-Kaws-For-Fragment-Tee-Grey.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1627941057&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Travis Scott Cactus Jack + Kaws For Fragment Tee Aged Yellow
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$47</div>
+                <div class="product-item-totalsell"># Of Sales 131</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Travis-Scott-x-McDonalds-Crew-T-Shirt-Red.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1606325876&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Travis Scott x McDonald's Crew T-Shirt Red
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$28</div>
+                <div class="product-item-totalsell"># Of Sales 127</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Juice-Wrld-x-XO-x-Vlone-Double-Agent-Tee-Natural.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611842418&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Juice Wrld x XO x Vlone Double Agent Tee Natural
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$49</div>
+                <div class="product-item-totalsell"># Of Sales 127</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Fear-of-God-Essentials-Knit-Pullover-Hoodie-Pistachio-5.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1631299892&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Knit Pullover Hoodie Pistachio
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$129</div>
+                <div class="product-item-totalsell"># Of Sales 124</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Juice-Wrld-x-Vlone-Legends-Never-Die-T-Shirt-White.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1608068142&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Juice Wrld x Vlone Legends Never Die T-Shirt White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$57</div>
+                <div class="product-item-totalsell"># Of Sales 121</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Travis-Scott-Cactus-Jack-For-Fragment-Manifest-T-shirt-Cream.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1629157354&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Travis Scott Cactus Jack For Fragment Manifest T-shirt Cream
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$48</div>
+                <div class="product-item-totalsell"># Of Sales 115</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/YZY-x-Gap-Round-Jacket-Blue.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1623185182&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Yeezy x Gap Round Jacket Blue
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$222</div>
+                <div class="product-item-totalsell"># Of Sales 110</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Fear-of-God-Essentials-Pullover-Hoodie-Pistachio.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1630518774&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Pullover Hoodie Pistachio
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$128</div>
+                <div class="product-item-totalsell"># Of Sales 104</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Off-White-x-Jordan-Hoodie-Black-FW21.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636622356&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Off-White x Jordan Hoodie Black (FW21)
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$268</div>
+                <div class="product-item-totalsell"># Of Sales 104</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Pop-Smoke-x-Vlone-The-Woo-T-Shirt-White.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1612550423&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Pop Smoke x Vlone The Woo T-Shirt White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$50</div>
+                <div class="product-item-totalsell"># Of Sales 102</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Supreme-Hanes-Boxer-Briefs-2-Pack-Pink.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1629392911&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Supreme Hanes Boxer Briefs (2 Pack) Pink
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$41</div>
+                <div class="product-item-totalsell"># Of Sales 100</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Supreme-Hanes-Boxer-Briefs-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1606325363&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Supreme Hanes Boxer (4 Pack) Briefs Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$50</div>
+                <div class="product-item-totalsell"># Of Sales 93</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Red.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1632921116&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">Yeezy x Gap Hoodie Red</div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$105</div>
+                <div class="product-item-totalsell"># Of Sales 93</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/The-North-Face-1996-Retro-Nuptse-Packable-Jacket-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1615596492&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                The North Face 1996 Retro Nuptse Packable Jacket Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$289</div>
+                <div class="product-item-totalsell"># Of Sales 87</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Nike-Tech-Fleece-Full-Zip-Hoodie-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1615596465&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Nike Tech Fleece Full Zip Hoodie Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$97</div>
+                <div class="product-item-totalsell"># Of Sales 87</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/FEAR-OF-GOD-ESSENTIALS-Pull-Over-Hoodie-SS21-Black-Stretch-Limo.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1620853883&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Pull-Over Hoodie (SS21) Black/Stretch
+                Limo
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$177</div>
+                <div class="product-item-totalsell"># Of Sales 86</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Nike-x-Drake-Certified-Lover-Boy-Hoodie-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611953663&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Nike x Drake Certified Lover Boy Hoodie Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$117</div>
+                <div class="product-item-totalsell"># Of Sales 83</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Fear-of-God-Essentials-Knit-Pullover-Hoodie-Harvest.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1630518773&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Knit Pullover Hoodie Harvest
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$131</div>
+                <div class="product-item-totalsell"># Of Sales 83</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/IKEA-x-Virgil-Abloh-MARKREAD-Medium-Bag-Brown.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1627946102&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Virgil Abloh x IKEA MARKERAD Medium Bag Brown
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$65</div>
+                <div class="product-item-totalsell"># Of Sales 81</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/FEAR-OF-GOD-ESSENTIALS-Pull-Over-Hoodie-SS21-Moss-Goat.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1620853884&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Pull-Over Hoodie (SS21) Moss/Goat
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$137</div>
+                <div class="product-item-totalsell"># Of Sales 81</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Off-White-x-Jordan-Hoodie-Sail.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636622357&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Off-White x Jordan Hoodie White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$245</div>
+                <div class="product-item-totalsell"># Of Sales 81</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Light-Brown.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1632921115&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Yeezy x Gap Hoodie Light Brown
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$108</div>
+                <div class="product-item-totalsell"># Of Sales 78</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Nav-x-Vlone-Bad-Habits-Tee-Black.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611842129&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Nav x Vlone Bad Habits Tee Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$67</div>
+                <div class="product-item-totalsell"># Of Sales 77</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Anti-Social-Social-Club-Kkoch-Hoodie-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611841873&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Anti Social Social Club Kkoch Hoodie Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$139</div>
+                <div class="product-item-totalsell"># Of Sales 75</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/YoungBoy-NBA-x-Vlone-My-Window-Tee-Black.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1635257169&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                YoungBoy NBA x Vlone My Window Tee Black
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$75</div>
+                <div class="product-item-totalsell"># Of Sales 74</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Fear-of-God-Essentials-Knit-Pullover-Hoodie-Amber.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1630518773&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Knit Pullover Hoodie Amber
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$176</div>
+                <div class="product-item-totalsell"># Of Sales 74</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <ul class="reveal">
+          <i class="fas fa-chevron-left"></i>
+          <li><a class="active" href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <span>...</span>
+          <li><a href="">25</a></li>
+          <i class="fas fa-chevron-right"></i>
+        </ul>
+      </div>
+    </div>
+    <footer class="reveal">
+      <div class="footer-top wrapper">
+        <h1 class="footer-tittle">StockX. Access the Now.</h1>
+        <div class="option-list">
+          <ul>
+            <li><a class="option-item-tittle" href="">Air Jordan</a></li>
+            <li><a class="option-item" href="">Air Jordan 1</a></li>
+            <li><a class="option-item" href="">Air Jordan 3</a></li>
+            <li><a class="option-item" href="">Air Jordan 4</a></li>
+            <li><a class="option-item" href="">Air Jordan 5</a></li>
+            <li><a class="option-item" href="">Air Jordan 11</a></li>
+            <li><a class="option-item" href="">Air Jordan 23</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Yezzy</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 350</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 350 V2</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 700</a></li>
+            <li><a class="option-item" href="">Yezzy 500</a></li>
+            <li><a class="option-item" href="">Yezzy Slides</a></li>
+            <li><a class="option-item" href="">Yezzy Foam</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Recent Updates</a></li>
+            <li><a class="option-item" href="">Best Sneakers Releasing</a></li>
+            <li><a class="option-item" href="">Best New Balance Collabs</a></li>
+            <li>
+              <a class="option-item" href="">Jordan 11 Cool Grey</a>
+            </li>
+            <li><a class="option-item" href="">Xbox Series X</a></li>
+            <li><a class="option-item" href="">PS5</a></li>
+            <li><a class="option-item" href="">Best Chrome Hearts</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Popular Releases</a></li>
+            <li>
+              <a class="option-item" href="">Air Jordan 1 High Bordeaux</a>
+            </li>
+            <li><a class="option-item" href="">Yeezy 500 Ash Grey</a></li>
+            <li><a class="option-item" href="">Nike Dunk High Sail Gum</a></li>
+            <li><a class="option-item" href="">Jordan 4 Red Thunder</a></li>
+            <li><a class="option-item" href="">Jordan 11 Cool Grey</a></li>
+            <li><a class="option-item" href="">Jordan 1 Bred Patent</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Streetwear</a></li>
+            <li><a class="option-item" href="">Chrome Hearts</a></li>
+            <li><a class="option-item" href="">Essentials</a></li>
+            <li><a class="option-item" href="">Yeezy GAP</a></li>
+            <li><a class="option-item" href="">Palm Angels</a></li>
+            <li><a class="option-item" href="">Ivy Park</a></li>
+            <li><a class="option-item" href="">Eric Emanuel</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Supreme</a></li>
+            <li><a class="option-item" href="">T-Shirts</a></li>
+            <li><a class="option-item" href="">Accessories</a></li>
+            <li><a class="option-item" href="">Supreme The North Face </a></li>
+            <li><a class="option-item" href="">Bottoms</a></li>
+            <li><a class="option-item" href="">Hoodies</a></li>
+            <li><a class="option-item" href="">Supreme Nike</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot wrapper">
+        <a href="" class="footer-btn">
+          <p>VietNam</p>
+          <span></span>
+          <p>EngLish</p>
+          <span></span>
+          <p>
+            <i class="fas fa-dollar-sign"></i>
+            USD
+          </p>
+        </a>
+        <div class="footer-sm">
+          <div class="footer-sm-tittle">Find Us on Social</div>
+          <div class="footer-sm-icon">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-download">
+          <div class="footer-download-tittle">Down load Our App</div>
+          <div class="footer-download-icon">
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-android"></i>
+          </div>
+        </div>
+        <div class="uat">Use Assistive Technology</div>
+        <div class="pbd">Proudli Built in Detroit</div>
+      </div>
+    </footer>
+    <script src="./js/product.js"></script>
+  </body>
+</html>

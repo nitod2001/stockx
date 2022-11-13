@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First project</title>
+    <link rel="stylesheet" href="./css/mystyle.css" />
+    <link rel="stylesheet" href="./css/mystyle.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <svg
+            viewBox="0 0 201 40"
+            focusable="false"
+            class="chakra-icon css-a7oa7r"
+          >
+            <title>StockX Logo</title>
+            <g>
+              <path
+                d="M186.401 27.5001L201.001 40V30L189.328 20.0056L201.001 10V0L180.601 17.4859V12.4999L166.001 0V10L177.674 19.9944L166.001 30V40L186.401 22.5144V27.5001Z"
+              ></path>
+              <path
+                d="M20.3007 16.8L13.7506 15.55C10.1005 14.85 8.50062 14 8.50062 12C8.50062 9.19995 11.6506 7.74994 15.6006 7.74994C19.7506 7.74994 23.4506 9.34994 24.2506 12.75H31.2508C30.4508 6.25002 24.6007 2 15.6006 2C7.30062 2 0.750616 5.65011 0.750616 12.2501C0.750616 18.0001 5.65063 20.9001 12.2006 22.1501L18.7506 23.4001C22.4007 24.1001 24.2506 25.2501 24.2506 27.5001C24.2506 30.55 20.8506 32.2501 16.6506 32.2501C11.5006 32.2501 8.05063 29.7501 7.25063 26.0001H0.000610352C1.0506 33.5001 6.95062 38.0001 16.6506 38.0001C25.3006 38.0001 32.0006 34.5001 32.0006 27.25C32.0007 20.85 26.8506 18.05 20.3007 16.8Z"
+              ></path>
+              <path
+                d="M48.6507 6.25001V2.5H41.4007V5.25001C41.4007 8.49998 39.9007 10 36.6507 10H34.6007V15.5H40.3507V29.0001C40.3507 35.0001 43.3007 37.5001 50.3007 37.5001H56.2507V32H50.9507C48.4507 32 47.6007 31.25 47.6007 29V15.5H56.2507V10H45.5007L48.6507 6.25001Z"
+              ></path>
+              <path
+                d="M111.351 32.5C106.101 32.5 102.751 28.8 102.751 23.8C102.751 18.8 106.101 15.1 111.351 15.1C115.401 15.1 118.301 17.35 119.051 20.1H126.201C124.901 13.6 119.251 9.59998 111.351 9.59998C101.901 9.59998 95.3508 15.3 95.3508 23.8C95.3508 32.3 101.901 38 111.351 38C119.251 38 125.451 34 126.451 27.25H119.301C118.551 29.75 115.851 32.5 111.351 32.5Z"
+              ></path>
+              <path
+                d="M75.3507 9.59998C65.6008 9.59998 59.3507 15.3 59.3507 23.8C59.3507 32.3 65.6007 38 75.3507 38C85.1007 38 91.3508 32.3 91.3508 23.8C91.3508 15.3 85.1008 9.59998 75.3507 9.59998ZM75.3507 32.5C70.1007 32.5 66.7507 28.8 66.7507 23.8C66.7507 18.8 70.1007 15.1 75.3507 15.1C80.6007 15.1 83.9508 18.8 83.9508 23.8C83.9508 28.8 80.6008 32.5 75.3507 32.5Z"
+              ></path>
+              <path
+                d="M145.151 22.9001L160.201 10.0001H150.451L138.151 20.8001V2.5H130.901V37.5001H138.151V28.9001L142.498 25.1742L153.051 37.5001H162.251L149.751 22.9001H145.151Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            class="header-search-input"
+            placeholder="Search for brands, color, etc"
+          />
+        </div>
+      </div>
+      <div class="header-right">
+        <div id="menu-btn" class="header-right-icon fas fa-bars"></div>
+        <ul class="header-right-menu">
+          <li><a href="">Browse</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="">Sign Up</a></li>
+        </ul>
+        <div class="header-sell-btn">Sell</div>
+      </div>
+    </header>
+    <section>
+      <div class="section-content">
+        <p>Buy, Sell and Trade</p>
+        <marquee behavior="" direction=""
+          >Change your life but keep your style</marquee
+        >
+      </div>
+    </section>
+    <ul class="option-menu">
+      <li class="option-item"><a href="">Sneakers</a></li>
+      <li class="option-item"><a href="">Streetwear</a></li>
+      <li class="option-item"><a href="">Electronics</a></li>
+      <li class="option-item"><a href="">Trading Cards</a></li>
+      <li class="option-item"><a href="">Collectibles</a></li>
+      <li class="option-item"><a href="">Handbags</a></li>
+      <li class="option-item"><a href="">Watches</a></li>
+    </ul>
+    <div class="content wrapper">
+      <div class="products reveal">
+        <div class="products-top">
+          <div class="products-top-left">
+            <p>Most Popular Sneakers</p>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <a
+            href="http://127.0.0.1:5500/project/sneakers.html"
+            class="products-top-right"
+          >
+            <p>See All</p>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="products-bottom">
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Adidas-Yeezy-Boost-350-Low-Pirate-Black-2015.png?fit=fill&bg=FFFFFF&w=140&h=100&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1607647587"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                adidas Yeezy Boost 350 Pirate Black (2015)
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$899</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    38 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://chanzsneakers.ru/wp-content/uploads/2021/01/1_-_31122020_-_Nike__Dunk__SB__Low__Freddy__Krueger.png"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Nike Dunk SB Low Freddy Krueger</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$22000</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    138 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/New-Balance-1300-Aime-Leon-Dore-Green-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1616604407"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">New Balance 1300</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$174</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    515 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://static.highsnobiety.com/thumbor/ebEN_AO6_84VUp8E6HV2aaXxlts=/1600x1067/static.highsnobiety.com/wp-content/uploads/2019/10/04174350/air-jordan-1-unc-to-chicago-release-date-price-1-02.jpg"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                THE AIR JORDAN 1 “UNC TO CHICAGO” DROPS JUST AHEAD OF
+                VALENTINE'S DAY
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$170</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    2388 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://www.glab.vn/storage/products/2021/02/04/601ba3545a88c.jpg"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                NIKE DUNK LOW RETRO WHITE BLACK (2021)
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$209</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    1538 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Nike-Air-Force-1-Low-White-07_V2-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1631122839"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Nike Air Force 1 Low White</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$87</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    738 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="brands reveal">
+        <div class="brand-tittle">Popular Grands</div>
+        <div class="brands-list">
+          <div class="brand-img">
+            <img
+              src="https://assets.turbologo.com/blog/en/2019/12/19084748/air-jordan-logo-cover-958x575.png"
+              alt=""
+              class="brand-img-top"
+            />
+            <img
+              src="https://static.highsnobiety.com/thumbor/VMSpJeVhw8msloD5DDRbY07tWG8=/1600x1067/static.highsnobiety.com/wp-content/uploads/2019/03/12104430/nike-air-jordan-4-bred-release-date-price-011.jpg"
+              alt=""
+              class="brand-img-bottom"
+            />
+          </div>
+          <div class="brand-img">
+            <img
+              src="https://pbs.twimg.com/media/DW-IKGuXUAAsqim.jpg"
+              alt=""
+              class="brand-img-top"
+            />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0237/8271/9565/files/21_dbd70e37-b7d5-4fa9-816e-082d6c9dfb47_480x480.jpg?v=1616704711"
+              alt=""
+              class="brand-img-bottom"
+            />
+          </div>
+          <div class="brand-img">
+            <img
+              src="https://i.pinimg.com/736x/c1/81/1e/c1811e4d81569a05f77de752a4e861a2.jpg"
+              alt=""
+              class="brand-img-top"
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREz-LPIuiVKX-e7E0EEvbyvyBqDt2MsNXKZw&usqp=CAU"
+              alt=""
+              class="brand-img-bottom"
+            />
+          </div>
+          <div class="brand-img">
+            <img
+              src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102010/new_balance.gif?itok=0Y_RkIur"
+              alt=""
+              class="brand-img-top"
+            />
+            <img
+              src="https://images.solecollector.com/complex/image/upload/c_fill,f_auto,fl_lossy,q_auto,w_1100/SOLE_SUNDAY_APP_SNEAKER_PROFILE_IMAGES_ALD_NB_550_GREEN_vk6i2m.jpg"
+              alt=""
+              class="brand-img-bottom"
+            />
+          </div>
+          <div class="brand-img">
+            <img
+              src="https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/5ecffacc772ab4448fff8a47_Untitled%20design-273.png"
+              alt=""
+              class="brand-img-top"
+            />
+            <img
+              src="http://cdn.cnn.com/cnnnext/dam/assets/210615101036-01-lego-adidas-sneaker-scli-intl.jpg"
+              alt=""
+              class="brand-img-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="products reveal">
+        <div class="products-top">
+          <div class="products-top-left">
+            <p>Trending Appearel</p>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <a
+            href="http://127.0.0.1:5500/project/streetwear.html"
+            class="products-top-right"
+          >
+            <p>See All</p>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="products-bottom">
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Supreme-Tiffany-Co-Box-Logo-Tee-White.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1636647311"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Supreme Tiffany & Co. Box Logo Tee</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$292</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    397 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Blue.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1632921115"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Yeezy x Gap Hoodie Blue</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$109</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    238 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Yeezy-x-GAP-Hoodie-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=2&trim=color&updated_at=1632921114&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Yeezy x Gap Hoodie Black</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$120</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    515 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Off-White-x-Jordan-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=2&trim=color&updated_at=1636622356&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Off-White x Jordan T-shirt Black</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$110</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    116 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://sneakerdaily.vn/wp-content/uploads/2020/12/ao-drew-house-mascot-ss-tee-white.png"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Drew House Mascot SS Tee White</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$209</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    1538 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/KAWS-x-Uniqlo-Flayed-Tee-White.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1615425200"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                KAWS x Uniqlo Flayed Tee (US Sizing) White
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$40</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    738 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="products reveal">
+        <div class="products-top">
+          <div class="products-top-left">
+            <p>Featured Colectibles</p>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <a
+            href="http://127.0.0.1:5500/project/collectibles.html"
+            class="products-top-right"
+          >
+            <p>See All</p>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="products-bottom">
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://anphat.com.vn/media/product/33475_sony_playstation_5.jpg"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Sony PlayStation PS5</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$1299</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    398 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://product.hstatic.net/1000289578/product/may_xbox_series_x_-xgame_8_ac50c4ef2306422f957e0fe7319ee39e_master.jpg"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">microsoft xbox series x</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$900</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    500 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Pokemon-TCG-25th-Anniversary-Celebrations-Ultra-Premium-Collection-Box.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1630695021"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Pokémon TCG 25th Anniversary Celebrations Ultra-Premium
+                Collection Box
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$270</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    411 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Hot-Wheels-x-Tesla-Cybertruck-110-Scale-RC-Car-2021-Version-w-Cyperquad-V2.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1626902458&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Hot Wheels x Tesla Cybertruck 1:10 Scale RC Car (2021 Version w/
+                Cyberquad)
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$100</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    88 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Bandai-Gundam-x-Nike-SB-Unicorn-Gundam-1-144-Scale-Model-Kit-Action-Figure-Set-V.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1632256551&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Bandai Gundam x Nike SB Unicorn (Destroy Mode) (1/144 Scale)
+                Model Kit Action Figure Set
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$257</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    6987 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Bearbrick-x-Transformers-Optimus-Prime-x-BAPE-200-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1635378662&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Bearbrick x Transformers Optimus Prime x BAPE 200% Black
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$117</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    938 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="posts reveal">
+        <div class="post-item-70">
+          <a href="">
+            <img
+              src="https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt8bd670e8231ccdd2/6197e17dd3b0c82a791e5210/WeeklySEOApparel_Updated_Homepage_Internal_Banners_SecondaryA.jpg?format=jpg&auto=webp&height=438"
+              alt=""
+              srcset=""
+              class="post-img"
+            />
+          </a>
+        </div>
+        <div class="post-item-30">
+          <a href="">
+            <img
+              src="https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt419710c4b2cfb7cc/61980ff4705bc42ccb980c80/Holiday-2021_Jordans-First-Time-SecondaryB-EN.png?format=jpg&auto=webp&height=438"
+              alt=""
+              srcset=""
+              class="post-img"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="products reveal">
+        <div class="products-top">
+          <div class="products-top-left">
+            <p>Most Viewed Bags</p>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <a href="" class="products-top-right">
+            <p>See All</p>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="products-bottom">
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/UGG-x-Telfar-Shopping-Bag-Small-Chestnut-222.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1636034462&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Telfar x UGG Shopping Bag Small Chestnut
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$243</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    106 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/UGG-x-Telfar-Shopping-Bag-Medium-Chestnut.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1617820322&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Telfar x UGG Shopping Bag Medium Chestnut
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$322</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    62 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Telfar-Shopping-Bag-Medium-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1606323158&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Telfar Shopping Bag Medium Black</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$309</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    47 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Telfar-Shopping-Bag-Small-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1606325506&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">Telfar Shopping Bag Small Black</div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$229</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    41 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Telfar-Puff-Shopper-Tote-Medium-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1634920165&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Telfar x Moose Knuckle Puff Shopper Tote Medium Black
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$339</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    41 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="https://images.stockx.com/images/Telfar-Shopping-Bag-Small-Bubblegum-Pink.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&trimcolor=ffffff&updated_at=1606321926&pad=0&fm=webp"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-content">
+              <div class="product-name">
+                Telfar Shopping Bag Small Bubblegum Pink
+              </div>
+              <div class="product-content-bot">
+                <div class="product-desc-price">
+                  <div class="product-desc">Lowest Ask</div>
+                  <div class="product-price">$218</div>
+                </div>
+                <div class="product-totalsold">
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    40 Sold
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="releases reveal">
+        <div class="releases-top">
+          <div class="releases-top-left">
+            <p>Most Viewed Bags</p>
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <a href="" class="releases-top-right">
+            <p>See All</p>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="releases-bot">
+          <div class="release-card">
+            <a href="#">
+              <div class="release-card-top">
+                <div class="release-card-aboveimg">
+                  <div class="release-card-date">
+                    <div class="release-card-month">Nov</div>
+                    <div class="release-card-day">23</div>
+                  </div>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="release-card-image">
+                  <img
+                    src="https://images.stockx.com/images/air-jordan-1-retro-high-element-gore-tex.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1634025516&pad=0&fm=webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="release-card-bot">
+                <div class="release-card-name">
+                  Jordan 1 Retro High Element Gore-Tex Black Particle Grey
+                </div>
+                <div class="release-card-bot-wrap">
+                  <div class="release-card-ask">
+                    <span class="down"></span>
+                    <p>ASK : $260</p>
+                  </div>
+                  <a href="" class="release-card-btn">
+                    <p>bid</p>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="release-card">
+            <a href="#">
+              <div class="release-card-top">
+                <div class="release-card-aboveimg">
+                  <div class="release-card-date">
+                    <div class="release-card-month">Nov</div>
+                    <div class="release-card-day">23</div>
+                  </div>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="release-card-image">
+                  <img
+                    src="https://images.stockx.com/images/Funko-Pop-Deluxe-Disney-Toy-Story-Rex-Box-Lunch-Exclusive-Figure-1091.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1628315225&pad=0&fm=webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="release-card-bot">
+                <div class="release-card-name">
+                  Funko Pop! Deluxe Disney Toy Story Rex Box Lunch Exclusive
+                  Figure #1091 Green
+                </div>
+                <div class="release-card-bot-wrap">
+                  <div class="release-card-ask">
+                    <span class="up"></span>
+                    <p>ASK : $260</p>
+                  </div>
+                  <a href="" class="release-card-btn">
+                    <p>bid</p>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="release-card">
+            <a href="#">
+              <div class="release-card-top">
+                <div class="release-card-aboveimg">
+                  <div class="release-card-date">
+                    <div class="release-card-month">Nov</div>
+                    <div class="release-card-day">23</div>
+                  </div>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="release-card-image">
+                  <img
+                    src="https://images.stockx.com/images/Funko-Pop-Marvel-Eternals-Phastos-FYE-Exclusive-Figure-744.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1629753189&pad=0&fm=webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="release-card-bot">
+                <div class="release-card-name">
+                  Funko Pop! Marvel Eternals Phastos FYE Exclusive Figure #744
+                </div>
+                <div class="release-card-bot-wrap">
+                  <a href="" class="release-card-btn">
+                    <p>bid</p>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="release-card">
+            <a href="#">
+              <div class="release-card-top">
+                <div class="release-card-aboveimg">
+                  <div class="release-card-date">
+                    <div class="release-card-month">Nov</div>
+                    <div class="release-card-day">24</div>
+                  </div>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="release-card-image">
+                  <img
+                    src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-A-Ma-Mani%C3%A9re.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1635880040&pad=0&fm=webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="release-card-bot">
+                <div class="release-card-name">
+                  Jordan 1 Retro High OG A Ma Maniére
+                </div>
+                <div class="release-card-bot-wrap">
+                  <div class="release-card-ask">
+                    <span class="up"></span>
+                    <p>ASK : $320</p>
+                  </div>
+                  <a href="" class="release-card-btn">
+                    <p>bid</p>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="release-card">
+            <a href="#">
+              <div class="release-card-top">
+                <div class="release-card-aboveimg">
+                  <div class="release-card-date">
+                    <div class="release-card-month">Nov</div>
+                    <div class="release-card-day">24</div>
+                  </div>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="release-card-image">
+                  <img
+                    src="https://images.stockx.com/360/Nike-Dunk-Low-Pink-Velvet-GS/Images/Nike-Dunk-Low-Pink-Velvet-GS/Lv2/img01.jpg?auto=compress&w=480&q=90&dpr=1&updated_at=1635268915&h=320&fm=webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="release-card-bot">
+                <div class="release-card-name">
+                  Nike Dunk Low Pink Velvet (GS)
+                </div>
+                <div class="release-card-bot-wrap">
+                  <a href="" class="release-card-btn">
+                    <p>bid</p>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="release-card">
+            <a href="#">
+              <div class="release-card-top">
+                <div class="release-card-aboveimg">
+                  <div class="release-card-date">
+                    <div class="release-card-month">Nov</div>
+                    <div class="release-card-day">24</div>
+                  </div>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="release-card-image">
+                  <img
+                    src="https://images.stockx.com/360/Air-Jordan-9-Retro-Boot-Black-Gum/Images/Air-Jordan-9-Retro-Boot-Black-Gum/Lv2/img01.jpg?auto=compress&w=480&q=90&dpr=1&updated_at=1607667044&h=320&fm=webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="release-card-bot">
+                <div class="release-card-name">
+                  Jordan 9 Retro Boot Black Gum
+                </div>
+                <div class="release-card-bot-wrap">
+                  <a href="" class="release-card-btn">
+                    <p>bid</p>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="posts reveal">
+        <div class="post-item-30">
+          <a href="">
+            <img
+              src="https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt0ae3cb1cb8aad338/61990699c99e0f1175b6891f/SecondaryB.jpg?format=jpg&auto=webp&height=438"
+              alt=""
+              srcset=""
+              class="post-img"
+            />
+          </a>
+        </div>
+        <div class="post-item-70">
+          <a href="">
+            <img
+              src="https://images.contentstack.io/v3/assets/blt818b0c67cf450811/blt7126905a95816914/619907a4c99e0f1175b68923/TheBest_Gundam_ActionFigures_SecondaryA.jpg?format=jpg&auto=webp&height=438"
+              alt=""
+              srcset=""
+              class="post-img"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="reveal">
+      <div class="footer-top wrapper">
+        <h1 class="footer-tittle">StockX. Access the Now.</h1>
+        <div class="option-list">
+          <ul>
+            <li><a class="option-item-tittle" href="">Air Jordan</a></li>
+            <li><a class="option-item" href="">Air Jordan 1</a></li>
+            <li><a class="option-item" href="">Air Jordan 3</a></li>
+            <li><a class="option-item" href="">Air Jordan 4</a></li>
+            <li><a class="option-item" href="">Air Jordan 5</a></li>
+            <li><a class="option-item" href="">Air Jordan 11</a></li>
+            <li><a class="option-item" href="">Air Jordan 23</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Yezzy</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 350</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 350 V2</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 700</a></li>
+            <li><a class="option-item" href="">Yezzy 500</a></li>
+            <li><a class="option-item" href="">Yezzy Slides</a></li>
+            <li><a class="option-item" href="">Yezzy Foam</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Recent Updates</a></li>
+            <li><a class="option-item" href="">Best Sneakers Releasing</a></li>
+            <li><a class="option-item" href="">Best New Balance Collabs</a></li>
+            <li>
+              <a class="option-item" href="">Jordan 11 Cool Grey</a>
+            </li>
+            <li><a class="option-item" href="">Xbox Series X</a></li>
+            <li><a class="option-item" href="">PS5</a></li>
+            <li><a class="option-item" href="">Best Chrome Hearts</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Popular Releases</a></li>
+            <li>
+              <a class="option-item" href="">Air Jordan 1 High Bordeaux</a>
+            </li>
+            <li><a class="option-item" href="">Yeezy 500 Ash Grey</a></li>
+            <li><a class="option-item" href="">Nike Dunk High Sail Gum</a></li>
+            <li><a class="option-item" href="">Jordan 4 Red Thunder</a></li>
+            <li><a class="option-item" href="">Jordan 11 Cool Grey</a></li>
+            <li><a class="option-item" href="">Jordan 1 Bred Patent</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Streetwear</a></li>
+            <li><a class="option-item" href="">Chrome Hearts</a></li>
+            <li><a class="option-item" href="">Essentials</a></li>
+            <li><a class="option-item" href="">Yeezy GAP</a></li>
+            <li><a class="option-item" href="">Palm Angels</a></li>
+            <li><a class="option-item" href="">Ivy Park</a></li>
+            <li><a class="option-item" href="">Eric Emanuel</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Supreme</a></li>
+            <li><a class="option-item" href="">T-Shirts</a></li>
+            <li><a class="option-item" href="">Accessories</a></li>
+            <li><a class="option-item" href="">Supreme The North Face </a></li>
+            <li><a class="option-item" href="">Bottoms</a></li>
+            <li><a class="option-item" href="">Hoodies</a></li>
+            <li><a class="option-item" href="">Supreme Nike</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot wrapper">
+        <a href="" class="footer-btn">
+          <p>VietNam</p>
+          <span></span>
+          <p>EngLish</p>
+          <span></span>
+          <p>
+            <i class="fas fa-dollar-sign"></i>
+            USD
+          </p>
+        </a>
+        <div class="footer-sm">
+          <div class="footer-sm-tittle">Find Us on Social</div>
+          <div class="footer-sm-icon">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-download">
+          <div class="footer-download-tittle">Down load Our App</div>
+          <div class="footer-download-icon">
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-android"></i>
+          </div>
+        </div>
+        <div class="uat">Use Assistive Technology</div>
+        <div class="pbd">Proudli Built in Detroit</div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

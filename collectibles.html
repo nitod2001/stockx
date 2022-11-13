@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collectibles</title>
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/product.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="scrollTop" onclick="scrolltoTop()"></div>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-logo">
+          <svg
+            viewBox="0 0 201 40"
+            focusable="false"
+            class="chakra-icon css-a7oa7r"
+          >
+            <title>StockX Logo</title>
+            <g>
+              <path
+                d="M186.401 27.5001L201.001 40V30L189.328 20.0056L201.001 10V0L180.601 17.4859V12.4999L166.001 0V10L177.674 19.9944L166.001 30V40L186.401 22.5144V27.5001Z"
+              ></path>
+              <path
+                d="M20.3007 16.8L13.7506 15.55C10.1005 14.85 8.50062 14 8.50062 12C8.50062 9.19995 11.6506 7.74994 15.6006 7.74994C19.7506 7.74994 23.4506 9.34994 24.2506 12.75H31.2508C30.4508 6.25002 24.6007 2 15.6006 2C7.30062 2 0.750616 5.65011 0.750616 12.2501C0.750616 18.0001 5.65063 20.9001 12.2006 22.1501L18.7506 23.4001C22.4007 24.1001 24.2506 25.2501 24.2506 27.5001C24.2506 30.55 20.8506 32.2501 16.6506 32.2501C11.5006 32.2501 8.05063 29.7501 7.25063 26.0001H0.000610352C1.0506 33.5001 6.95062 38.0001 16.6506 38.0001C25.3006 38.0001 32.0006 34.5001 32.0006 27.25C32.0007 20.85 26.8506 18.05 20.3007 16.8Z"
+              ></path>
+              <path
+                d="M48.6507 6.25001V2.5H41.4007V5.25001C41.4007 8.49998 39.9007 10 36.6507 10H34.6007V15.5H40.3507V29.0001C40.3507 35.0001 43.3007 37.5001 50.3007 37.5001H56.2507V32H50.9507C48.4507 32 47.6007 31.25 47.6007 29V15.5H56.2507V10H45.5007L48.6507 6.25001Z"
+              ></path>
+              <path
+                d="M111.351 32.5C106.101 32.5 102.751 28.8 102.751 23.8C102.751 18.8 106.101 15.1 111.351 15.1C115.401 15.1 118.301 17.35 119.051 20.1H126.201C124.901 13.6 119.251 9.59998 111.351 9.59998C101.901 9.59998 95.3508 15.3 95.3508 23.8C95.3508 32.3 101.901 38 111.351 38C119.251 38 125.451 34 126.451 27.25H119.301C118.551 29.75 115.851 32.5 111.351 32.5Z"
+              ></path>
+              <path
+                d="M75.3507 9.59998C65.6008 9.59998 59.3507 15.3 59.3507 23.8C59.3507 32.3 65.6007 38 75.3507 38C85.1007 38 91.3508 32.3 91.3508 23.8C91.3508 15.3 85.1008 9.59998 75.3507 9.59998ZM75.3507 32.5C70.1007 32.5 66.7507 28.8 66.7507 23.8C66.7507 18.8 70.1007 15.1 75.3507 15.1C80.6007 15.1 83.9508 18.8 83.9508 23.8C83.9508 28.8 80.6008 32.5 75.3507 32.5Z"
+              ></path>
+              <path
+                d="M145.151 22.9001L160.201 10.0001H150.451L138.151 20.8001V2.5H130.901V37.5001H138.151V28.9001L142.498 25.1742L153.051 37.5001H162.251L149.751 22.9001H145.151Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            class="header-search-input"
+            placeholder="Search for brands, color, etc"
+          />
+        </div>
+      </div>
+      <div class="header-right">
+        <i class="fas fa-bars header-right-icon"></i>
+        <ul class="header-right-menu">
+          <li><a href="">Browse</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="">Sign Up</a></li>
+        </ul>
+        <div class="header-sell-btn">Sell</div>
+      </div>
+    </header>
+    <section>
+      <div
+        class="product-image-wrap"
+        style="
+          background-image: url(https://stockx-assets.imgix.net/Core/browse-header-collectibles.jpg?auto=compress,format);
+        "
+      >
+        <div class="product-content">
+          <h1>Collectibles</h1>
+        </div>
+      </div>
+    </section>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-left-top">
+          <a class="content-left-tittle" href="">Collectibles</a>
+          <ul class="main-menu">
+            <li><a href="">KAWS</a></li>
+            <li><a href="">BEARBRICK</a></li>
+            <li><a href="">ART PRINTS</a></li>
+            <li><a href="">LEGO</a></li>
+            <li><a href="">DREW HOUSE</a></li>
+            <li><a href="">FUNKO POP!</a></li>
+            <li><a href="">ACTION FIGURES</a></li>
+            <li><a href="">DANIEL ARSHAM</a></li>
+            <li><a href="">TAKASHI MURAKAMI</a></li>
+            <li><a href="">VIRGIL ABLOH</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-right">
+        <a
+          href="http://127.0.0.1:5500/project/index.html"
+          class="content-right-backhome"
+          >Home</a
+        >
+        <span>/</span>
+        <a href="" class="content-right-tittle">Collectibles</a>
+        <div class="product-list">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Microsoft-Xbox-Mini-Fridge.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1634576885&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Microsoft Xbox Series X Mini Fridge (US Plug)
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$142</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Virgil-Abloh-x-Nike-The-Ten-Book-1.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1610754641&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Virgil Abloh x Nike ICONS "The Ten" Something's Off Book
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$70</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Ideas-Home-Alone-Set-21330.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1634850638&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Ideas Home Alone Set 21330
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$350</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Lego-Bonsai-Tree-Set-10281.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611070347&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Botanical Collection Bonsai Tree Set 10281
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$57</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Lego-Flower-Bouqet-Set-10280.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611070374&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Botanical Collection Flower Bouquet Set 10280
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$60</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Hot-Wheels-x-Tesla-Cybertruck-110-Scale-RC-Car-2021-Version-w-Cyperquad-V2.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1626902458&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Hot Wheels x Tesla Cybertruck 1:10 Scale RC Car (2021 Version w/
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$110</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Santas-Visit-Winter-Village-Set-10293.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1631216841&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Santa's Visit Winter Village Set 10293
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$178</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Magic-Mixies-Magic-Cauldron-Toy-Pink.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1634850639&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Magic Mixies Magic Cauldron Toy Pink
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$91</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Titanic-Set-10294.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1634243427&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">LEGO Titanic Set 10294</div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$797</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/MSCHF-Boosted-Packs-V3-Mariah-Carey-Edition-Individual-Pack.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1638382773&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                MSCHF Boosted Packs V3 "Mariah Carey Edition" Individual Pack
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$139</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Virgil-Abloh-Abloh-isms-Book.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1613763832&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Virgil Abloh Abloh-isms Book
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$30</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Magic-Mixies-Magic-Cauldron-Toy-Blue.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1634850638&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Magic Mixies Magic Cauldron Toy Blue
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$90</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/MSCHF-Boosted-Packs-V2-Individual-Pack.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1631628046&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                MSCHF Boosted Packs V2 Individual Pack
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$26</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Takashi-Murakami-x-Smart-Magazine-Pancake-Maker-Set-of-2-1.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1633615631&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Takashi Murakami x Smart Magazine Pancake Maker Set of 2
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$55</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/IKEA-ART-EVENT-2021-Daniel-Arsham-Clock.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1616459780&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Daniel Arsham IKEA ART EVENT 2021 Clock
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$47</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Hot-Wheels-Mario-Kart-Rainbow-Road-Raceway-Set-164-Scale.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1635519899&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Hot Wheels Mario Kart Rainbow Road Raceway Set 1:64 Scale
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$173</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Harry-Potter-Hogwarts-Wizards-Chess-Set-76392.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1618851791&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Harry Potter Hogwarts Wizard's Chess Set 76392
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$96</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Lego-Ocean-Exploration-Ship-Set-60266.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611070392&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO City Ocean Exploration Ship Set 60266
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$149</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Virgil-Abloh-Figures-of-Speech-Special-Edition-Book-Multi.png?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1621458603&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Virgil Abloh x MCA Figures of Speech (Special Edition) Book
+                Multi
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$324</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/MSCHF-Boosted-Packs-V3-Mariah-Carey-Edition-Box-of-10-Packs-v3.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1638383693&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                MSCHF Boosted Packs V3 "Mariah Carey Edition" Box of 10 Packs
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$428</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Kith-KXTH-10-Year-Anniversary-Book-Multi.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1633024330&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Kith KXTH 10 Year Anniversary Book Multi
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$41</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Virgil-Abloh-x-IKEA-MARKERAD-HOMEWORK-Toolkit-Red.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1619145031&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Virgil Abloh x IKEA MARKERAD "HOMEWORK" Toolkit Orange
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$51</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Santas-Sleigh-Set-40499.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636059932&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Santas Sleigh Set 40499
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$68</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Creator-Gingerbread-House-Set-10267.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1612208003&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Creator Gingerbread House Set 10267
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$120</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Lego-Ghostbusters-Ecto-1-Set-21108.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611070375&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Ideas Ghostbusters Ecto-1 Set 21108
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$125</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Marvel-Daily-Bugle-Set-76178.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1621442647&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Marvel Daily Bugle Set 76178
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$347</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Travis-Scott-Cactus-Jack-Fortnite-12-Action-Figure-Duo-Set-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1607010898&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Travis Scott Cactus Jack Fortnite 12" Action Figure Duo Set
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$65</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Supreme-Red-Box-Logo-100x-Lot-Sticker-V2.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1637352806&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Supreme Red Box Logo 100x Sticker Lot
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$43</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Hot-Wheels-Premium-Nissan-Skyline-GT-R-Garage-Box-Set-v2.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1637949756&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Hot Wheels Premium Nissan Skyline GT-R Garage Box Set
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$97</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/KAWS-Tokyo-First-Flayed-Companion-Keychain-Brown-Gray-Black-Set-2021.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1626395917&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                KAWS Tokyo First Flayed Companion Keychain Brown/Gray/Black Set
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$97</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Pickup-Truck-Set-10290.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1625846148&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">LEGO Pickup Truck Set 10290</div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$117</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Super-Mario-64-Block-Set-71395-Yellow.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1631216842&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Super Mario 64 ? Block Set 71395 Yellow
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$213</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Harry-Potter-Hogwarts-Icons-Collectors-Edition-Set-76391-White.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1628291030&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Harry Potter Hogwarts Icons Collectors Edition Set 76391
+                White
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$302</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Star-Wars-Ultimate-Collector-Series-AT-AT-Set-75313-Gray.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1636734690&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Star Wars Ultimate Collector Series AT-AT Set 75313 Gray
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$867</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Travis-Scott-Cactus-Jack-Fortnite-AR-Goosebumps-Nerf-Elite-Dart-Blaster.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1612933389&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Travis Scott Cactus Jack Fortnite AR-Goosebumps Nerf Elite Dart
+                Blaster
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$75</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/LEGO-Boost-Creative-Toolbox-Set-17101.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1612207988&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Boost Creative Toolbox Set 17101
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$178</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="product-list reveal">
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/MSCHF-Boosted-Packs-V2-Box-of-10-Packs.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1631628046&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                MSCHF Boosted Packs V2 Box of 10 Packs
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$167</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Lego-Ghostbusters-Ecto-1-Set-10274.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1611070341&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                LEGO Ghostbusters Ecto-1 Set 10274
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$209</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Bearbrick-x-BAIT-x-Kano-x-Bruce-Lee-Enter-The-Dragon-SDCC-Exclusive-100-400-Set.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1638333063&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Bearbrick x BAIT x Kano x Bruce Lee: Enter The Dragon (SDCC
+                Exclusive)
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$329</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="product-item">
+            <div class="image-wrap">
+              <img
+                src="https://images.stockx.com/images/Bearbrick-x-BAPE-Madison-Avenue-Exclusive-Shark-Camo-100-400-Set.jpg?fit=fill&bg=FFFFFF&w=140&h=75&auto=compress&trim=color&q=90&dpr=1&updated_at=1629498988&fm=webp"
+                alt=""
+              />
+            </div>
+            <div class="product-item-wrap">
+              <div class="product-item-tittle">
+                Fear of God Essentials Knit Pullover Hoodie Amber
+              </div>
+              <div class="product-item-bot">
+                <div class="product-item-decs">Lowest Ask</div>
+                <div class="product-item-price">$430</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <ul class="reveal">
+          <i class="fas fa-chevron-left"></i>
+          <li><a class="active" href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <span>...</span>
+          <li><a href="">25</a></li>
+          <i class="fas fa-chevron-right"></i>
+        </ul>
+      </div>
+    </div>
+    <footer class="reveal">
+      <div class="footer-top wrapper">
+        <h1 class="footer-tittle">StockX. Access the Now.</h1>
+        <div class="option-list">
+          <ul>
+            <li><a class="option-item-tittle" href="">Air Jordan</a></li>
+            <li><a class="option-item" href="">Air Jordan 1</a></li>
+            <li><a class="option-item" href="">Air Jordan 3</a></li>
+            <li><a class="option-item" href="">Air Jordan 4</a></li>
+            <li><a class="option-item" href="">Air Jordan 5</a></li>
+            <li><a class="option-item" href="">Air Jordan 11</a></li>
+            <li><a class="option-item" href="">Air Jordan 23</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Yezzy</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 350</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 350 V2</a></li>
+            <li><a class="option-item" href="">Yezzy Boost 700</a></li>
+            <li><a class="option-item" href="">Yezzy 500</a></li>
+            <li><a class="option-item" href="">Yezzy Slides</a></li>
+            <li><a class="option-item" href="">Yezzy Foam</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Recent Updates</a></li>
+            <li><a class="option-item" href="">Best Sneakers Releasing</a></li>
+            <li><a class="option-item" href="">Best New Balance Collabs</a></li>
+            <li>
+              <a class="option-item" href="">Jordan 11 Cool Grey</a>
+            </li>
+            <li><a class="option-item" href="">Xbox Series X</a></li>
+            <li><a class="option-item" href="">PS5</a></li>
+            <li><a class="option-item" href="">Best Chrome Hearts</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Popular Releases</a></li>
+            <li>
+              <a class="option-item" href="">Air Jordan 1 High Bordeaux</a>
+            </li>
+            <li><a class="option-item" href="">Yeezy 500 Ash Grey</a></li>
+            <li><a class="option-item" href="">Nike Dunk High Sail Gum</a></li>
+            <li><a class="option-item" href="">Jordan 4 Red Thunder</a></li>
+            <li><a class="option-item" href="">Jordan 11 Cool Grey</a></li>
+            <li><a class="option-item" href="">Jordan 1 Bred Patent</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Streetwear</a></li>
+            <li><a class="option-item" href="">Chrome Hearts</a></li>
+            <li><a class="option-item" href="">Essentials</a></li>
+            <li><a class="option-item" href="">Yeezy GAP</a></li>
+            <li><a class="option-item" href="">Palm Angels</a></li>
+            <li><a class="option-item" href="">Ivy Park</a></li>
+            <li><a class="option-item" href="">Eric Emanuel</a></li>
+          </ul>
+          <ul>
+            <li><a class="option-item-tittle" href="">Supreme</a></li>
+            <li><a class="option-item" href="">T-Shirts</a></li>
+            <li><a class="option-item" href="">Accessories</a></li>
+            <li><a class="option-item" href="">Supreme The North Face </a></li>
+            <li><a class="option-item" href="">Bottoms</a></li>
+            <li><a class="option-item" href="">Hoodies</a></li>
+            <li><a class="option-item" href="">Supreme Nike</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot wrapper">
+        <a href="" class="footer-btn">
+          <p>VietNam</p>
+          <span></span>
+          <p>EngLish</p>
+          <span></span>
+          <p>
+            <i class="fas fa-dollar-sign"></i>
+            USD
+          </p>
+        </a>
+        <div class="footer-sm">
+          <div class="footer-sm-tittle">Find Us on Social</div>
+          <div class="footer-sm-icon">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+        <div class="footer-download">
+          <div class="footer-download-tittle">Down load Our App</div>
+          <div class="footer-download-icon">
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-android"></i>
+          </div>
+        </div>
+        <div class="uat">Use Assistive Technology</div>
+        <div class="pbd">Proudli Built in Detroit</div>
+      </div>
+    </footer>
+    <script src="./js/product.js"></script>
+  </body>
+</html>
